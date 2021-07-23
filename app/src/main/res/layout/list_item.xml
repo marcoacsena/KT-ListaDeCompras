@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="6dp"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_list_item"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tvItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yantramanav_black"
+            android:text="@string/item_da_lista"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_title"
+            />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ivMenuMore"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:contentDescription="@string/menu_superior"-->
+<!--            android:src="@drawable/ic_menu_more"-->
+<!--             />-->
+
+        <TextView
+            android:id="@+id/tvDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yantramanav"
+            android:text="@string/descricao_do_item_da_lista"
+            android:textColor="@android:color/darker_gray"
+             />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvDate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:fontFamily="@font/yantramanav"-->
+<!--            android:text="@string/data"-->
+<!--            android:textColor="@android:color/darker_gray"-->
+<!--             />-->
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="5dp"-->
+        <!--            android:background="#ef5350"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/tvDate"-->
+        <!--            />-->
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
