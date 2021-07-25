@@ -23,15 +23,12 @@ class MainActivity : AppCompatActivity() {
 //
 //        binding.rvListaDeCompras.adapter = MainAdapter()
 
-            itens = getItensList()
-
-
+        itens = getItensList()
         val rvListaDeCompras : RecyclerView = findViewById(R.id.rvListaDeCompras)
         rvListaDeCompras.adapter = MainAdapter(itens)
     }
 
     private fun getItensList(): ArrayList<ItemDeProduto> {
-
         itens.add(
             ItemDeProduto("Uxi", "É uma fruta típica de Belém-PA"))
         itens.add(
@@ -42,9 +39,7 @@ class MainActivity : AppCompatActivity() {
             ItemDeProduto("Abacaba", "É uma bebida saborosa, típico de Belém-PA"))
         itens.add(
             ItemDeProduto("Pupunha", "É uma fruta típica de Belém-PA"))
-
         return itens
-
     }
 
 
